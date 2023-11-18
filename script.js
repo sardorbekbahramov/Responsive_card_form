@@ -19,10 +19,7 @@ allLinks.forEach((elem) => {
       if (tab.id.includes(linkId)) {
         tab.classList.add("tab-content--active");
         // generate content for tab
-        generateTabItems(
-          elem,
-          tab
-        );    
+        generateTabItems(elem, tab);    
       } else {
         tab.classList.remove('tab-content--active');
       }
@@ -46,6 +43,7 @@ const tabRecords = [
     type: 'user',
     status: 'inactive'
   },
+
   {
     src: 'assets/image.svg',
     name: 'Profile photo',
@@ -130,3 +128,17 @@ activeLink.classList.toggle('active');
 activeTab.classList.toggle('tab-content--active');
 
 generateTabItems(activeLink, activeTab);
+
+
+// ----------------------dark_lite side--------------------------
+
+const get_dark = document.getElementById("dark_lite"),
+    card_box = document.getElementById("card_box"),
+    all_a = document.querySelectorAll("a")
+
+
+get_dark.addEventListener('click', function() {
+    get_dark.classList.toggle("fa-moon")
+    card_box.classList.toggle("container_dark")
+    card_box.classList.toggle("container")
+} )

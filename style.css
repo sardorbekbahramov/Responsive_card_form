@@ -30,12 +30,14 @@ body {
         rgba(121, 121, 136, 0.2)
         0px 7px 29px 0px;	
 }
-/* .active_dark {
+.active_dark {
     font-weight: 700;
     outline:none;
     color: var(--white);
     margin-bottom: -1px;
-} */
+
+}
+
 .lite_dark {
     position: relative;
     display: inline-block;
@@ -131,6 +133,7 @@ header {
     background-color: var(--gray-hover);
     outline: none;
     cursor: pointer;
+    transition: .5s;
 }
 
 .record:hover .avatar__wrapper {
